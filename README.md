@@ -88,3 +88,8 @@ So bhai seedha rule yaad rakh:
 > `if-else` → pehle lagta hai value choose karne ke liye.”
 
 Chaahe mai ek diagram bana du (timeline-style) jisse ye structure visually samajh aa jaye?
+
+
+# Search in dataframe
+df[(df["age"] == 32) & (df["family"] == 1)]
+df[df["joker"]=="op"]["parents"] aise bhi use kar sakte 
