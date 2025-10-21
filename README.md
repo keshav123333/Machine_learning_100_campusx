@@ -110,6 +110,7 @@ blanks
 
 
 # How to download image text from web using request 
+ **Download Image**
           import requests
 
                     url = "https://storage.googleapis.com/kagglesdsdata/datasets/829469/1417158/skull-icon.png?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=databundle-worker-v2%40kaggle-161607.iam.gserviceaccount.com%2F20251021%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20251021T131303Z&X-Goog-Expires=345600&X-Goog-SignedHeaders=host&X-Goog-Signature=680624734852b1133a91f5fe073e183caad9700da0d93bd89568ad73bfea4410d542f9b845349bd307968ea67b7a53c2eae83cb1c8e9dcf96ec020c4fbb26ba034233ebb50b54129b97d8e174ae44c2ca1843bee75d7af8432238da681745deebb8a813d9b0bc30943d60c16554c51d32e77536a83e3e2be628a06ea3f66c8f8e932b81cc48222f2d5d8a39c8ae86344d4a38dc3602d116186c6331837e30f24b60017b663b1a0ef70ae036016d7dde9f44408c106a64344fa76be3791d0e8e4004b67061eabcc2ad5912504f217ac7331d511b2550573a61f45d440d108b2a04de73ff2a32eca3d64a47ded26254bd515d6a66eaa2a512c2f23e2a668445641"
@@ -118,8 +119,17 @@ blanks
             with open("skull-icon.png", "wb") as f:
                 f.write(r.content)
 
-                
-      re="https://raw.githubusercontent.com/kuemit/txt_book/refs/heads/master/examples/alice_in_wonderland.txt"
-    with open("alice_in_wonderland.txt","w") as f:
-      f.write(requests.get(re).text)
 
+
+**Download text **
+
+          re="https://raw.githubusercontent.com/kuemit/txt_book/refs/heads/master/examples/alice_in_wonderland.txt"
+        with open("alice_in_wonderland.txt","w") as f:
+          f.write(requests.get(re).text)
+
+
+**Download text but in direct format**
+
+    line=[]
+    o=requests.get("https://raw.githubusercontent.com/kuemit/txt_book/refs/heads/master/examples/alice_in_wonderland.txt")
+    line.append(o.text)
