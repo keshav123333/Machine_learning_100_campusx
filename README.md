@@ -102,4 +102,8 @@ for index,text in df["merged_text"].items():
   if isinstance(text, str) and text.isspace():
     blanks.append(index)
         
-blanks     
+blanks
+
+      df["merged_text"]=df["merged_text"].apply(clean_text)
+      # this helps in like clean_Text ek function banya jo text as input 
+      leta and so apply se laga sakte hai 
