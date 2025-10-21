@@ -93,3 +93,13 @@ Chaahe mai ek diagram bana du (timeline-style) jisse ye structure visually samaj
 # Search in dataframe
 df[(df["age"] == 32) & (df["family"] == 1)]
 df[df["joker"]=="op"]["parents"] aise bhi use kar sakte 
+
+
+# Iterate through df 
+
+blanks=[]
+for index,text in df["merged_text"].items():
+  if isinstance(text, str) and text.isspace():
+    blanks.append(index)
+        
+blanks     
