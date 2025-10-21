@@ -117,4 +117,9 @@ blanks
             r = requests.get(url)
             with open("skull-icon.png", "wb") as f:
                 f.write(r.content)
-      
+
+                
+      re="https://raw.githubusercontent.com/kuemit/txt_book/refs/heads/master/examples/alice_in_wonderland.txt"
+    with open("alice_in_wonderland.txt","w") as f:
+      f.write(requests.get(re).text)
+
