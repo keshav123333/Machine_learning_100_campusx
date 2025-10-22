@@ -133,3 +133,21 @@ blanks
     line=[]
     o=requests.get("https://raw.githubusercontent.com/kuemit/txt_book/refs/heads/master/examples/alice_in_wonderland.txt")
     line.append(o.text)
+
+
+# np.where 
+ np.where(condition, value_if_true, value_if_false)
+ 
+    df1["cgpa"] = np.where(
+        df1["cgpa"] > upper_limit, upper_limit,
+        np.where(df1["cgpa"] < lower_limit, lower_limit, df1["cgpa"])
+    )
+4️⃣ df1["cgpa"] = ... ka matlab
+
+np.where ek naya NumPy array return karta hai
+
+Fir wo pandas column cgpa ko update kar deta hai
+
+Matlab original df1["cgpa"] overwrite ho jata hai → ab ye capped values contain karega
+
+    
