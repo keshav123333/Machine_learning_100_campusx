@@ -154,7 +154,9 @@ Matlab original df1["cgpa"] overwrite ho jata hai → ab ye capped values contai
 
 # loc ka use 
 1.        df['ismarried']=0;
-          df.loc[df['Name'].str.contains("Mr."), 'ismarried'] = 1
+          df.loc[
+            df['Name'].str.contains(r'\b(Mr\.|Mister|Master|Mrs\.)\b',                        case=False, na=False),
+            'ismarried'] = 1
           df.loc[df['Name'].str.contains("Mrs."), 'ismarried'] = 1
 
     
