@@ -150,4 +150,11 @@ Fir wo pandas column cgpa ko update kar deta hai
 
 Matlab original df1["cgpa"] overwrite ho jata hai → ab ye capped values contain karega
 
+
+
+# loc ka use 
+1.        df['ismarried']=0;
+          df.loc[df['Name'].str.contains("Mr."), 'ismarried'] = 1
+          df.loc[df['Name'].str.contains("Mrs."), 'ismarried'] = 1
+
     
