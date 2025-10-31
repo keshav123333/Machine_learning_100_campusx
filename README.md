@@ -160,3 +160,5 @@ Matlab original df1["cgpa"] overwrite ho jata hai → ab ye capped values contai
           df.loc[df['Name'].str.contains("Mrs."), 'ismarried'] = 1
 
     
+# Logistic regression
+playlist ke video dekh le for better 
