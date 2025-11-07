@@ -162,3 +162,8 @@ Matlab original df1["cgpa"] overwrite ho jata hai → ab ye capped values contai
     
 # Logistic regression
 playlist ke video dekh le for better 
+
+
+#boosting mein aur 
+
+lgbm catboost xgboost bhi hote hai 
