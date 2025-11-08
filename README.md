@@ -167,3 +167,39 @@ playlist ke video dekh le for better
 #boosting mein aur 
 
 lgbm catboost xgboost bhi hote hai 
+
+
+#important df
+
+        kn=KMeans(n_clusters=4)
+        kn.fit(df)
+        pred=kn.predict(df)
+        
+        df[ypred==0].iloc[:,0] 
+
+yaha pe pred m kuch ek array jo 0 1 2 contin maine pre==0 vaha ka index lya and then df ka vo index le lye yaha pe pred naam ka koi col ni hai df m b twork kar raha hai kmean cluster wala repo dekh as [] ye index based hota hai and df[ypred==0].iloc[:,0] humne jo df aaya usme se first col utha liya 
+
+
+
+#3d plot
+
+px.scatter_3d(x=,y=,z=, colour)
+
+aur padh iske baare mein
+
+
+# index
+
+
+you can use like 45 kaunse index in array list so list.index(45) aise kar sakte hai tu 
+
+euclidain dist short cut
+            
+            np.sqrt(np.dot(b-a,b-a))
+
+
+#np.all()
+so yaha pe if ek bhi false so false 
+
+       if np.all([1,2,3,4]==[1,2,3,4]):
+      print("true")
