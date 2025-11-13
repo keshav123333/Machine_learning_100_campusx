@@ -203,3 +203,18 @@ so yaha pe if ek bhi false so false
 
        if np.all([1,2,3,4]==[1,2,3,4]):
       print("true")
+
+# isinstance 
+    blanks=[]
+    for index,text in df["merged_text"].items():
+      if isinstance(text, str) and text.isspace():
+        blanks.append(index)
+    
+    blanks
+
+# stopwords 
+    list1=nlp.Defaults.stop_words
+    list2=stopwords.words("english")
+    Stopwords=set((set(list1)|set(list2)))
+    print(len(Stopwords))
+
