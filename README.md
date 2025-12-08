@@ -218,3 +218,16 @@ so yaha pe if ek bhi false so false
     Stopwords=set((set(list1)|set(list2)))
     print(len(Stopwords))
 
+
+# random created example ke liye 
+
+    x=np.random.randint(0,100,size=(50,3))
+    x=pd.DataFrame(df,columns=['f1','f2','f3'])
+
+    uniform_data = np.random.randint(0, 100, size=(50, 3))
+
+    # 2) Normal distribution (mean = 0, std = 1)
+    normal_data = np.random.normal(loc=0, scale=1, size=(50, 3))
+    
+    # 3) Random numbers between 0 and 1
+    zero_to_one_data = np.random.rand(50, 3)
