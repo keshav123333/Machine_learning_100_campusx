@@ -231,3 +231,9 @@ so yaha pe if ek bhi false so false
     
     # 3) Random numbers between 0 and 1
     zero_to_one_data = np.random.rand(50, 3)
+
+
+
+# flatten 
+chagpt kar .flatten .view ka use 
+.ravel bhi falt withput copying 
