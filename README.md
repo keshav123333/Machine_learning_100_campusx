@@ -237,3 +237,30 @@ so yaha pe if ek bhi false so false
 # flatten 
 chagpt kar .flatten .view ka use 
 .ravel bhi falt withput copying 
+
+
+#bincount 
+
+💡 Example 1 (सबसे आसान)
+import torch
+
+x = torch.tensor([2, 2, 3, 0, 3])
+torch.bincount(x)
+
+
+Step-by-step:
+
+नंबर 0 कितनी बार आया? → 1 बार
+
+नंबर 1 कितनी बार आया? → 0 बार
+
+नंबर 2 कितनी बार आया? → 2 बार
+
+नंबर 3 कितनी बार आया? → 2 बार
+
+Output:
+
+tensor([1, 0, 2, 2])
+
+
+बस यही है bincount.
