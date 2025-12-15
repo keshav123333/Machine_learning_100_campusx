@@ -264,3 +264,38 @@ tensor([1, 0, 2, 2])
 
 
 बस यही है bincount.
+
+
+
+#groupby and map ka use 
+
+        artist_pop = df.groupby('artist_name')['popularity'].mean()
+        df['artist_avg_pop'] = df['artist_name'].map(artist_pop)
+
+  2️⃣ Same kaam transform() se (🔥 MOST IMPORTANT)
+
+        df['artist_avg_pop'] = (
+            df.groupby('artist_name')['popularity']
+              .transform('mean')
+        )
+
+🔎 Difference?
+
+map = 2 step
+
+transform = 1 step
+
+Index mismatch ka tension nahi
+
+📌 Interview + Kaggle favorite
+📌 Recommended approach
+
+
+           artist_stats = df.groupby('artist_name')['popularity'].agg(
+            avg_pop='mean',
+            max_pop='max',
+            min_pop='min'
+        )
+        
+        df['artist_avg_pop'] = df['artist_name'].map(artist_stats['avg_pop'])
+        df['artist_max_pop'] = df['artist_name'].map(artist_stats['max_pop'])
