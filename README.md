@@ -311,3 +311,7 @@ Index mismatch ka tension nahi
     #     (df["artist_popularity"] >= artistpop)
     # ).astype(int)
 
+#use loc and index 
+
+                  df.loc[(df["explicit"]==True) & (df["track_number"]==6),                                              ["artist_followers","track_number","explicit"]]
+              df[(df["explicit"]==True) & (df["track_number"]==6)][["explicit"]]
