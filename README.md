@@ -299,3 +299,15 @@ Index mismatch ka tension nahi
         
         df['artist_avg_pop'] = df['artist_name'].map(artist_stats['avg_pop'])
         df['artist_max_pop'] = df['artist_name'].map(artist_stats['max_pop'])
+
+
+
+
+# Transform 
+
+        # df["is_hit"] = (
+    #     (df["track_popularity"] >= f) &
+    #     (df["artist_followers"] >= follw) &
+    #     (df["artist_popularity"] >= artistpop)
+    # ).astype(int)
+
