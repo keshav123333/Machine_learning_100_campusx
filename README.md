@@ -271,6 +271,7 @@ tensor([1, 0, 2, 2])
 
         artist_pop = df.groupby('artist_name')['popularity'].mean()
         df['artist_avg_pop'] = df['artist_name'].map(artist_pop)
+        
 
   2️⃣ Same kaam transform() se (🔥 MOST IMPORTANT)
 
@@ -299,6 +300,10 @@ Index mismatch ka tension nahi
         
         df['artist_avg_pop'] = df['artist_name'].map(artist_stats['avg_pop'])
         df['artist_max_pop'] = df['artist_name'].map(artist_stats['max_pop'])
+
+#Map with dict 
+        
+        balanced_df=balanced_df["label"].map({"spam":1,"ham":0})
 
 
 
