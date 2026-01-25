@@ -320,3 +320,10 @@ Index mismatch ka tension nahi
 
                   df.loc[(df["explicit"]==True) & (df["track_number"]==6),                                              ["artist_followers","track_number","explicit"]]
               df[(df["explicit"]==True) & (df["track_number"]==6)][["explicit"]]
+
+
+
+#Pipeline and column tranformer 
+
+                
+     ye link hai isko use kare tu like last ki chats isme inhi se related hai :https://chatgpt.com/share/6975d810-638c-800a-87f7-51e64e8042a7
