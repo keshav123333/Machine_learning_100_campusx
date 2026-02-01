@@ -334,3 +334,7 @@ Index mismatch ka tension nahi
 git rm --cached .env
 echo ".env" >> .gitignore
 
+
+
+ye error aayi jab maine try kiya file ko dalne m inse solve
+ isko delh https://chatgpt.com/share/697fc277-a784-800a-878e-87156097bed5
