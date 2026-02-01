@@ -327,3 +327,10 @@ Index mismatch ka tension nahi
 
                 
      ye link hai isko use kare tu like last ki chats isme inhi se related hai :https://chatgpt.com/share/6975d810-638c-800a-87f7-51e64e8042a7
+
+
+#git se koi file hatani ho jo commit ho gayi ho
+
+git rm --cached .env
+echo ".env" >> .gitignore
+
