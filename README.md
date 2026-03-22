@@ -329,7 +329,7 @@ Index mismatch ka tension nahi
      ye link hai isko use kare tu like last ki chats isme inhi se related hai :https://chatgpt.com/share/6975d810-638c-800a-87f7-51e64e8042a7
 
 
-#git se koi file hatani ho jo commit ho gayi ho
+# git se koi file hatani ho jo commit ho gayi ho
 
 git rm --cached .env
 echo ".env" >> .gitignore
@@ -338,3 +338,13 @@ echo ".env" >> .gitignore
 
 ye error aayi jab maine try kiya file ko dalne m inse solve
  isko delh https://chatgpt.com/share/697fc277-a784-800a-878e-87156097bed5
+
+
+
+
+#  plotting ax ka use 
+
+ax mein hum kosis karte ek hi plot mein multiple banane ki and tu vo time series wala video dekh sakta usse chat gpt kar le 
+
+
+
