@@ -348,3 +348,18 @@ ax mein hum kosis karte ek hi plot mein multiple banane ki and tu vo time series
 
 
 
+# transform use with df 
+        Version 1
+        df["GR"] = df["GR"].fillna(
+            df.groupby("well_name")["GR"].transform("median")
+        )
+
+dono same kaam 
+
+        Version 2
+        train_df["GR"] = train_df.groupby(
+            "well_name"
+        )["GR"].transform(
+            lambda x: x.fillna(x.median())
+        )
+
