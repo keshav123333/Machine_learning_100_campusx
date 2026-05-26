@@ -363,3 +363,5 @@ dono same kaam
             lambda x: x.fillna(x.median())
         )
 
+# how to handle string wale col  shortcut 
+    df[col] = df[col].str.strip().str.title()
