@@ -365,3 +365,9 @@ dono same kaam
 
 # how to handle string wale col  shortcut 
     df[col] = df[col].str.strip().str.title()
+
+# How to compute label encoding of  a categoricl row 
+        OrdinalEncoder(
+                    handle_unknown="use_encoded_value",
+                    unknown_value=-1
+                )
