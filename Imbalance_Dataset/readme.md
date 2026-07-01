@@ -260,3 +260,10 @@ Optimizer ko lagega ki ye error bahut bada hai, isliye model minority class ko s
 * ✅ Jab tum original data ko modify nahi karna chahte.
 
 Agar imbalance **bahut extreme** ho (jaise 1000:10 ya 10,000:20), to sirf class weights kaafi nahi hote. Aise cases me class weights ko **data augmentation (images)**, **weighted sampling**, ya **focal loss** ke saath combine karna zyada effective hota hai.
+
+
+
+
+
+
+
