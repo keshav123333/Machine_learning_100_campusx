@@ -63,7 +63,32 @@ Generally
 [
 Weight_i=\frac{Total\ Samples}{Number\ of\ Classes\times Samples_i}
 ]
+1. Class Weights (Traditional)
 
+Weight formula:
+
+w
+i
+	​
+
+=
+C×n
+i
+	​
+
+N
+	​
+
+
+Yahan:
+
+N = total samples
+C = number of classes
+n
+i
+	​
+
+ = class i ke samples
 Example
 
 ```
