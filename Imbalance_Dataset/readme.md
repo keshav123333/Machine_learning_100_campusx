@@ -57,27 +57,7 @@ Ab model minority ko ignore nahi karega.
 ---
 
 # Weight ka formula
-
-Generally
-
-[
-Weight_i=\frac{Total\ Samples}{Number\ of\ Classes\times Samples_i}
-]
-1. Class Weights (Traditional)
-
-Weight formula:
-
-w
-i
-	​
-
-=
-C×n
-i
-	​
-
-N
-	​
+<img width="635" height="142" alt="image" src="https://github.com/user-attachments/assets/848cee7e-ed59-4601-91f0-9d144c89a8aa" />
 
 
 Yahan:
