@@ -347,8 +347,6 @@ ye error aayi jab maine try kiya file ko dalne m inse solve
 ax mein hum kosis karte ek hi plot mein multiple banane ki and tu vo time series wala video dekh sakta usse chat gpt kar le 
 
 
-# cutom indexing 
-p.loc[p["cluster"].isin([0, -1]), p.columns != "cluster"]
 
 
 # transform use with df 
@@ -374,3 +372,10 @@ dono same kaam
                     handle_unknown="use_encoded_value",
                     unknown_value=-1
                 )
+
+# cutom indexing 
+p.loc[p["cluster"].isin([0, -1]), p.columns != "cluster"]
+ans do condtion bhi de sakte 
+if or use toh ye 
+p[(p["cluster"]==0)| (p["cluster"]==-1)].iloc[:,:-1]
+yaha .iloc hi use karte hai 
