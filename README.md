@@ -347,6 +347,9 @@ ye error aayi jab maine try kiya file ko dalne m inse solve
 ax mein hum kosis karte ek hi plot mein multiple banane ki and tu vo time series wala video dekh sakta usse chat gpt kar le 
 
 
+# cutom indexing 
+p.loc[p["cluster"].isin([0, -1]), p.columns != "cluster"]
+
 
 # transform use with df 
         Version 1
