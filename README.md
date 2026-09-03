@@ -379,3 +379,16 @@ ans do condtion bhi de sakte
 if or use toh ye 
 p[(p["cluster"]==0)| (p["cluster"]==-1)].iloc[:,:-1]
 yaha .iloc hi use karte hai 
+
+
+
+# Notes for mtplotlib and seaborn 
+
+````python
+//basic 
+plt.figure(figsize=(10, 10))
+plt.subplot(2,2,1) // 2*2 ka row and ye first piece 
+sns.histplot(df["sepal_length"],kde=False) -> 1 attribute
+sns.kdeplot(df["sepal_length"]) ye desnity ka bana deti same as hist normal mein help
+
+````
