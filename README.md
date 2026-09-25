@@ -392,3 +392,14 @@ sns.histplot(df["sepal_length"],kde=False) -> 1 attribute
 sns.kdeplot(df["sepal_length"]) ye desnity ka bana deti same as hist normal mein help
 
 ````
+
+# yaha pe ek col jo string with coma sep tujhe find ki max ka index 
+```python
+df["pop_list"] = df["pop"].str.split(",")
+
+max_idx = df["pop_list"].str.len().idxmax()
+max_value = df.loc[max_idx, "pop"]
+
+print("Index:", max_idx)
+print("Value:", max_value)
+```
